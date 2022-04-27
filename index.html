@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="an.css">
+    <title>我的第一个网页</title>
+    <link href="http://photo.chaoxing.com/p/112080426_80" rel="shortcut icon">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="center" id="headbar">
+        <b>猜数游戏</b>
+    </div>
+    <img class="center top30" src="http://photo.chaoxing.com/p/112080426_80" style="border-radius: 50px;"></img>
+    <div class="center" style="width:600px;text-align: center;">
+        <div class="font25 top30" id="tip"></div>
+        <div>1~100之间的整数</div>
+        <input type="text" class="top30" id="put"></input>
+        <br/>
+        <button onclick="restart()" class="top30">重新开始</button>
+        <script type="text/javascript">
+            $('#put').bind('keyup', function(event) {
+                if (event.keyCode == "13") {                    //回车执行查询
+                    check()
+                }
+            });
+            $("#headbar").each(function() {
+                $(this)[0].addEventListener("animationend",function(){
+                $(this).css("animation","");
+                });
+            });
+        </script>
+    </div>
+</body>
