@@ -20,7 +20,7 @@
         <div>1~100之间的整数</div>
         <input type="text" class="top30" id="put"></input>
         <br/>
-        <button onclick="restart()" class="top30">重新开始</button>
+        <button id="restart" onclick="restart()" class="top30 none">重新开始</button>
         <script type="text/javascript">
             $('#put').bind('keyup', function(event) {
                 if (event.keyCode == "13") {                    //回车执行查询
