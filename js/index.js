@@ -10,6 +10,8 @@ function check(){
     if(document.querySelector("#put").value==num){
         document.querySelector("#headbar").innerText="猜对了"
         document.querySelector("#headbar").style.background="cornflowerblue"
+        $("#restart").removeClass('none')
+        $("#put").addClass('none')
     }
     else if(document.querySelector("#put").value<num) document.querySelector("#headbar").innerText="猜小了"
     else if(document.querySelector("#put").value>num) document.querySelector("#headbar").innerText="猜大了"
@@ -21,7 +23,8 @@ function restart(){
     num=makeround()
     document.querySelector("#headbar").style.background="coral"
     document.querySelector("#headbar").innerHTML="<b>猜数游戏</b>"
-
+    $("#restart").addClass('none')
+    $("#put").removeClass('none')
 }
 
 function timtip(hour){
