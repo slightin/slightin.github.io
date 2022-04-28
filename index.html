@@ -17,7 +17,7 @@
     <img class="center top30" src="http://photo.chaoxing.com/p/112080426_80" style="border-radius: 50px;"></img>
     <div class="center" style="width:600px;text-align: center;">
         <div class="font25 top30" id="tip"></div>
-        <div>1~100之间的整数</div>
+        <div id="range">1~100之间的整数</div>
         <input type="text" class="top30" id="put"></input>
         <br/>
         <button id="restart" onclick="restart()" class="top30 none">重新开始</button>
@@ -27,7 +27,7 @@
                     check()
                 }
             });
-            $("#headbar").each(function() {
+            $("#headbar, #range").each(function() {
                 $(this)[0].addEventListener("animationend",function(){
                 $(this).css("animation","");
                 });
