@@ -9,6 +9,6 @@
 * 适配新版评估页面
 * 分数为[9,10)之间的随机一位小数
 * 新增多条主观评价自动随机填写
-* ******
+******
 ### <font face="宋体">v2.1更新 新增主页快捷面板</font>
 ![alt text](https://scriptcat.org/api/v1/resource/image/S1GsaMrnKny5Jd6c)
