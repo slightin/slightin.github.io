@@ -12,7 +12,7 @@ projects:
 - icon: project
     name: MyScript
     desc: 自己写的脚本
-    link: <https://github.com/slightin/myScript>
+    link: https://github.com/slightin/myScript
 
 - icon: link
     name: 链接名称
